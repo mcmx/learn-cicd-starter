@@ -8,7 +8,7 @@ import (
 
 func TestGetAPIKey(t *testing.T) {
 	h := make(http.Header)
-	h.Set("Auth", "one")
+	h.Set("Authorization", "ApiKey none")
 	tests := map[string]struct {
 		input http.Header
 		want  string
