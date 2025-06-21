@@ -24,7 +24,7 @@ func TestGetAPIKey(t *testing.T) {
 				t.Fatal(err)
 			}
 			if diff != "" {
-				t.Fatalf(diff)
+				t.Fatal(diff)
 			}
 		})
 	}
